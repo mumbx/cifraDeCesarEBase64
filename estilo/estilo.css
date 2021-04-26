@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top:75px; 
+    background-color: #202731;
+}
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    width: 50%;
+}
+
+
+label{
+    
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.processo{
+    display: flex;
+    justify-content: space-around;
+    color:white;
+
+}
+
+fieldset {
+    margin: 15px 0px 15px 0px;
+    border: 4px #e5ff00 solid;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px;
+    min-height: 50px;
+    background-color: #202731;
+    
+  }
+
+textarea{
+
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;    
+    display: flex;
+    resize: none;
+    padding: 15px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+}
+
+legend{
+    font-family: 'Press Start 2P', cursive;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: unset;
+    
+}
+
+select{
+    height: 30px;
+    width: 100%;   
+    background-color: black;
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+input[type="number"]{
+    
+    color: whitesmoke;
+    background-color: black;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+
+}
+
+button{
+    letter-spacing: 2px;
+    font-family: 'Press Start 2P', cursive;
+    color:yellow;
+    background-color: black;
+    text-align: center;
+    font-size: 17px;
+    width: 35%;
+    height: 40px;
+}
+
+.resultado{
+   
+    height: 80px;
+   
+    background-color: #202731;   
+    
+
+}
+
+.resultado p{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: cursive;
+    font-size: 15px; 
+    background-color: black;
+}
+
+
+.cifra{
+   
+    display: none;
+}
+
+.pequenos{
+
+    width: 50%;
+}
+
+input[type="radio"]{
+
+    color: yellow;
+
+}
+
+
+
+@media (max-width: 600px)
+{
+
+    .formulario{
+        width: 95%;
+        padding: 10px;
+    }
+  
+    .pequenos{
+
+        width: 100%;
+    }
+
+    body{
+
+        padding-top: 25px;
+    }
+
+    
+button{
+ 
+    width: 100%;
+    height: 40px;
+}
+
+
+textarea{
+
+
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+
+}
+
+   
+
+}

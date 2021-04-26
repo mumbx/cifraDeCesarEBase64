@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <title>Decodificador Resilia</title>
+</head>
+
+<body>
+
+    <h1>🔐</h1>
+
+    <form class="formulario" id="formulario">
+
+        <fieldset class="processo pequenos">
+            <legend>Linguagem</legend>
+            <select name="linguagem" id="linguagem">
+
+                <option value="B64">Base64</option>
+                <option value="CC">Cifra de César</option>
+
+            </select>
+        </fieldset>
+
+        <fieldset class="processo cifra pequenos" id="cifrainput">
+            <legend>Incremento</legend>                           
+            <input min="0" max="9" placeholder="0" id="cifra" type="number"><br>
+            <small> Limite: 9</small>
+        </fieldset>
+
+        <fieldset class="processo pequenos">
+
+            <legend>Processo</legend>
+            <div>
+                <label>Codificar</label>
+                <input type="radio" name="processo" id="processo1" value="C">
+            </div>
+
+            <div>
+                <label>Decodificar</label>
+                <input type="radio" name="processo" id="processo2" value="D">
+            </div>
+
+        </fieldset>
+
+        <fieldset class="processo">
+
+            <legend>Insira seu texto aqui</legend>
+
+            <textarea id="txtArea" rows="10"></textarea>
+
+        </fieldset>
+
+        <fieldset class="processo resultado">
+            <legend>Resultado</legend>
+
+            <p id="resultado"></p> 
+
+        </fieldset>
+
+        <button id="btn">Codificar</button>
+
+    </form> 
+
+    <script src="JS/javascript.js"></script>
+</body>
+
+</html>
